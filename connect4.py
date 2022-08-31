@@ -1,9 +1,14 @@
+# Connect 4 in Python by Austiel
+# Connect 4  is a two-player board game, in which each player take turns dropping colored tokens
+# into a seven-column, six-row vertically suspended grid.
+# https://en.wikipedia.org/wiki/Connect_Four
+
 # from os import system
 
 def printBoard(board: list):
     '''Prints the board on the terminal.'''
     # system('cls')
-    print(' _______________________________________')
+    print(' ___________________________')
     for y in board[::-1]:
         row = ''
         for x in y:
@@ -11,7 +16,7 @@ def printBoard(board: list):
             elif x == 1: row += f"| ○ "
             elif x == 2: row += f"| ● "
         print(row + '|')
-    print(' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\n  0   1   2   3   4   5   6   7   8   9\n')
+    print(' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\n  0   1   2   3   4   5   6\n')
 
 def boardChecker(board: list, player: int, coord: tuple): # Coord is (y, x)   
     '''Checks the board if the player who just made the turn has won'''
@@ -72,7 +77,7 @@ def play(p_wins = {}):
         Default parameter: p_wins = {} (an empty dictionary)'''
 
     # Creates a 10x10 board
-    board = [[0 for i in range(10)] for i in range(10)]
+    board = [[0 for i in range(7)] for i in range(6)]
 
     player = 1
     win = False
