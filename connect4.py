@@ -1,7 +1,10 @@
-# Connect 4 in Python by Austiel
-# Connect 4  is a two-player board game, in which each player take turns dropping colored tokens
-# into a seven-column, six-row vertically suspended grid.
-# https://en.wikipedia.org/wiki/Connect_Four
+"""
+Connect 4 in Python by Austiel
+
+Connect 4  is a two-player board game, in which each player take turns dropping colored tokens
+into a seven-column, six-row vertically suspended grid.
+https://en.wikipedia.org/wiki/Connect_Four
+"""
 
 # from os import system
 
